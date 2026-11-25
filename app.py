@@ -56,7 +56,7 @@ def add_user():
         except Exception as e:
             return jsonify({"error": str(e)}), 500
 
-    # 3️⃣ Simpan user ke database
+    # 3️⃣ Simpan user ke database mysql
     user_data = {
         "name": name,
         "email": email,
